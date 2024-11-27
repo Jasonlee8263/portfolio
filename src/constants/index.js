@@ -2,8 +2,9 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-import award1 from "../assets/awards/BYU ACM.jpg"
-import award2 from "../assets/awards/BYU PMA.jpg"
+import project5 from "../assets/projects/project-5.jpg";
+import award1 from "../assets/awards/BYU ACM.jpg";
+import award2 from "../assets/awards/BYU PMA.jpg";
 
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
@@ -21,7 +22,7 @@ export const EXPERIENCES = [
       "Leveraged WebSocket technology to create a real-time trading system that enables users to initiate and accept trading requests.",
       "Reduced task completion time by 25% while improving product quality by establishing a collaborative team structure, using GitHub.",
     ],
-    technologies: ["React.js", "Vue.js", "DynamoDB","WebSocket"],
+    technologies: ["React.js", "Vue.js", "DynamoDB", "WebSocket"],
   },
   {
     year: "Jun 2024 – Aug 2024",
@@ -102,8 +103,8 @@ export const PROJECTS = [
   },
   {
     title: "Skill Gap Analyzer - Career Development Tool",
-    image: project1, // Replace with the appropriate project image variable
-    demoLink: "https://github.com/Yi-99/are-you-gapped", // Add a demo link if available
+    image: project5,
+    demoLink: "https://github.com/Yi-99/are-you-gapped",
     description: [
       "Developed a skill gap analysis tool to help users identify skill deficiencies and receive personalized learning recommendations.",
       "Leveraged OpenAI to dynamically generate questions, scored user responses with AI, and visualized user performance in a pentagon chart resembling game-like ability stats, enhancing engagement and user experience.",
@@ -116,14 +117,14 @@ export const AWARD = [
   {
     title: "1st Place Winner in the 2024 BYU ACM YHack",
     link: "https://www.linkedin.com/posts/jason-jonghyuk_im-thrilled-to-announce-that-our-team-emerged-activity-7175737182949654529-1b6X?utm_source=share&utm_medium=member_desktop",
-    image: award1
+    image: award1,
   },
   {
     title: "1st Place Winner in the 2024 BYU PMA Hackathon",
     link: "https://www.linkedin.com/posts/jason-jonghyuk_hackathon-skillgapanalyzer-careergrowth-activity-7264450034392281088-uBBo?utm_source=share&utm_medium=member_desktop",
-    image: award2
-  }
-]
+    image: award2,
+  },
+];
 
 export const CONTACT = {
   address: "44 W 2170 N, Provo UT",

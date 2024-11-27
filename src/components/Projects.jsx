@@ -22,13 +22,19 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                src={project.image}
-                width={300}
-                height={300}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
+              <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={project.image}
+                  width={300}
+                  height={300}
+                  alt={project.title}
+                  className="mb-6 rounded hover:opacity-80 transition-opacity duration-300 cursor-pointer"
+                />
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -58,6 +64,17 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
+              <div>
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="mt-4 rounded bg-purple-700 px-4 py-2 text-white hover:bg-purple-800 transition-colors">
+                    See Demo
+                  </button>
+                </a>
+              </div>
             </motion.div>
           </div>
         ))}

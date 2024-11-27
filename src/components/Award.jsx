@@ -20,13 +20,19 @@ const Award = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                src={award.image}
-                width={300}
-                height={300}
-                alt={award.title}
-                className="mb-6 rounded"
-              />
+              <a
+                href={award.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={award.image}
+                  width={300}
+                  height={300}
+                  alt={award.title}
+                  className="mb-6 rounded hover:opacity-80 transition-opacity duration-300 cursor-pointer"
+                />
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

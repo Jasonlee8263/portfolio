@@ -1,6 +1,8 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.png";
+import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
+import resume from "../assets/Resume.pdf"
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -43,6 +45,21 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            <motion.div
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              className="max-w-xl font-light tracking-tight"
+            >
+              <a
+                href={resume}
+                download="Jonghyuk_Lee_Resume.pdf"
+                className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-3 text-white font-medium hover:from-purple-600 hover:to-indigo-700 hover:shadow-lg transition-all duration-300"
+              >
+                <FiDownload className="mr-2 text-lg" />
+                Download CV
+              </a>
+            </motion.div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
