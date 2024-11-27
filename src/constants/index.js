@@ -69,7 +69,7 @@ export const PROJECTS = [
       "Integrated the analysis results into a user-friendly interface for easy video editing, using React.js and TailwindCSS.",
     ],
     award: "2024 BYU ACM YHack 1st Place",
-    technologies: ["Python", "Google Document API", "React.js", "TailwindCSS"],
+    technologies: ["Python", "Flask", "React.js", "TailwindCSS"],
   },
   {
     title: "Find My Housing",
