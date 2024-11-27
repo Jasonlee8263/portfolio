@@ -16,6 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(import.meta.env.VITE_SERVICE_ID)
 
     // EmailJS Service
     emailjs
