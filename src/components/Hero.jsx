@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/profile.jpg";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import resume from "../assets/Resume.pdf"
@@ -49,7 +49,7 @@ const Hero = () => {
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              className="max-w-xl font-light tracking-tight"
+              className="mb-8 max-w-xl font-light tracking-tight"
             >
               <a
                 href={resume}

@@ -8,7 +8,7 @@ import award2 from "../assets/awards/BYU PMA.jpg";
 
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
-export const ABOUT_TEXT = `I am a dedicated software engineering student with hands-on experience in developing robust web applications. My expertise lies in working with technologies like React, Node.js, and Python, while continuously expanding my knowledge in the ever-evolving tech landscape. I enjoy tackling challenging problems, collaborating with teams, and bringing innovative ideas to life. Outside of development, I love exploring new places and staying active.`;
+export const ABOUT_TEXT = `I am a passionate software engineering student with a deep enthusiasm for coding and problem-solving. With a proven track record of building innovative web applications, I excel in leveraging technologies like React.js, Node.js, and Python to create scalable solutions that contribute positively to society. Tackling complex challenges and collaborating with teams to deliver impactful results drive my motivation. Beyond my technical pursuits, I find joy in playing soccer, staying active, and continuously seeking opportunities to grow both as a developer and as an individual.`;
 
 export const EXPERIENCES = [
   {

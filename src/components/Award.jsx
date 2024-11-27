@@ -44,7 +44,7 @@ const Award = () => {
                 href={award.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-8 mb-2 font-semibold hover:underline cursor-pointer"
+                className="lg:ml-8 mb-2 font-semibold hover:underline cursor-pointer"
               >
                 {award.title}
               </a>
