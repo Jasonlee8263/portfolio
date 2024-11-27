@@ -8,7 +8,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [isSent, setIsSent] = useState(false);
+  const [status, setStatus] = useState({ loading: false, success: null });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,28 +16,40 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(import.meta.env.VITE_SERVICE_ID)
 
-    // EmailJS Service
+    // Ensure environment variables are set
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("Environment variables for EmailJS are not set correctly.");
+      setStatus({ loading: false, success: false });
+      return;
+    }
+
+    setStatus({ loading: true, success: null });
+
     emailjs
       .send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
           to_name: "Jonghyuk Lee",
         },
-        import.meta.env.VITE_PUBLIC_KEY
+        publicKey
       )
       .then(
         () => {
-          setIsSent(true);
+          setStatus({ loading: false, success: true });
           setFormData({ name: "", email: "", message: "" }); // Reset form
         },
         (error) => {
           console.error("Failed to send email:", error);
+          setStatus({ loading: false, success: false });
         }
       );
   };
@@ -95,14 +107,25 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-purple-600 rounded-lg text-white font-semibold hover:bg-purple-700 transition duration-300"
+          className={`w-full py-2 px-4 rounded-lg text-white font-semibold transition duration-300 ${
+            status.loading
+              ? "bg-purple-400 cursor-not-allowed"
+              : "bg-purple-600 hover:bg-purple-700"
+          }`}
+          disabled={status.loading}
         >
-          Send Message
+          {status.loading ? "Sending..." : "Send Message"}
         </button>
       </form>
-      {isSent && (
+
+      {status.success === true && (
         <p className="mt-4 text-green-500 text-center">
           Your message has been sent successfully!
+        </p>
+      )}
+      {status.success === false && (
+        <p className="mt-4 text-red-500 text-center">
+          Oops! Something went wrong. Please try again later.
         </p>
       )}
     </motion.div>
