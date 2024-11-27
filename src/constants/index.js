@@ -2,75 +2,131 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import award1 from "../assets/awards/BYU ACM.jpg"
+import award2 from "../assets/awards/BYU PMA.jpg"
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated software engineering student with hands-on experience in developing robust web applications. My expertise lies in working with technologies like React, Node.js, and Python, while continuously expanding my knowledge in the ever-evolving tech landscape. I enjoy tackling challenging problems, collaborating with teams, and bringing innovative ideas to life. Outside of development, I love exploring new places and staying active.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
+    year: "Aug 2023 – Present",
     role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    company: "iLabz",
+    location: "Provo, UT",
+    description: [
+      "Optimized application performance by decreasing redundant API calls by 30%, resulting in a 1-second decrease in load time, which streamlined approach lowered server costs and enhanced user experience, using React.js.",
+      "Successfully resolved over 60 compatibility issues and performance bottlenecks introduced by the Vue.js upgrade, resulting in a 20% reduction in load times.",
+      "Leveraged WebSocket technology to create a real-time trading system that enables users to initiate and accept trading requests.",
+      "Reduced task completion time by 25% while improving product quality by establishing a collaborative team structure, using GitHub.",
+    ],
+    technologies: ["React.js", "Vue.js", "DynamoDB","WebSocket"],
+  },
+  {
+    year: "Jun 2024 – Aug 2024",
+    role: "Full Stack Software Engineer",
+    company: "Glod-AI",
+    location: "Provo, UT",
+    description: [
+      "Reduced media processing time by 28% by integrating OpenAI Text-to-Audio and dubbing APIs, building a video merging API with Python and FastAPI, and developing a RESTful API for streamlined content delivery and management.",
+      "Improved user experience and increased subtitle accuracy by 34% by designing and integrating UI for review page customization using Next.js (React.js) and constructing a subtitle API with OpenAI Audio-to-Text.",
+      "Cut down API testing costs by 92% through the development of efficient and test functions, conducting end-to-end testing, and resolving critical bugs using Python.",
+      "Leveraged an open-source library (Moviepy) to overcome the complexities of synchronizing text, audio, and video, resulting in a robust and customizable video generation process, using Python.",
+    ],
+    technologies: ["Python", "FastAPI", "Next.js", "Moviepy", "OpenAI APIs"],
+  },
+  {
+    year: "Aug 2023 – Present",
+    role: "Tech Team Lead",
+    company: "BYU Korean Business Student Association",
+    location: "Provo, UT",
+    description: [
+      "Built an online platform allowing Korean students to share information and seek assistance through a blog and authentication system, utilizing React.js, Express.js, TypeScript, PostgreSQL, TailwindCSS, Amazon S3, Google Auth, and MongoDB.",
+      "By scaling server resources by 50%, we were able to handle a 30% increase in website traffic.",
+    ],
+    technologies: [
+      "React.js",
+      "Express.js",
+      "TypeScript",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Amazon S3",
+      "MongoDB",
+    ],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Swift Shorts - AI Shorts Generation and Video Analytics Tool",
     image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    demoLink: "https://www.youtube.com/watch?v=oy6Oik1Os6c",
+    description: [
+      "Automatically created 3 short videos from a long one by operating an algorithm to identify the most engaging parts, using Python.",
+      "Resolved a critical issue with a misconfigured Google Document API, salvaging the project by successfully integrating the API through extensive parameter adjustments.",
+      "Integrated the analysis results into a user-friendly interface for easy video editing, using React.js and TailwindCSS.",
+    ],
+    award: "2024 BYU ACM YHack 1st Place",
+    technologies: ["Python", "Google Document API", "React.js", "TailwindCSS"],
   },
   {
-    title: "Task Management App",
+    title: "Find My Housing",
     image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    demoLink: "https://www.findmyhousings.com/",
+    description: [
+      "Boosted user engagement by 22% by developing and implementing a Google Maps integration using React.js, displaying over 140 housing locations with interactive markers, and engineering a modal system for detailed information on marker clicks.",
+      "Experienced significant user growth, attracting over 2,000 users since its launch.",
+    ],
+    technologies: ["React.js", "Google Maps API", "TailwindCSS"],
   },
   {
-    title: "Portfolio Website",
+    title: "Sports Day",
     image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    demoLink: "https://fsykorea.click/",
+    description: [
+      "Supported up to 500 concurrent users with an average response time of under 2 seconds, developed and deployed a high-performance web app for real-time score input and management, using React.js.",
+      "Utilized React.js, Node.js, MongoDB, and AWS to deliver a scalable and user-friendly solution.",
+    ],
+    technologies: ["React.js", "Node.js", "MongoDB", "AWS"],
   },
   {
-    title: "Blogging Platform",
+    title: "G-TRAVEL - Gemini AI Travel Planner",
     image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    demoLink: "https://www.youtube.com/watch?v=ambPHFr96l4",
+    description: [
+      "Developed a travel planning application utilizing the Google Gemini API and integrated Booking.com, Skyscanner, and Tripadvisor APIs, offering users a comprehensive, real-time solution for hotels, flights, and attractions, enhancing decision-making, using React.",
+      "Engineered the application with Node.js and React.js, creating a streamlined, user-friendly interface for itinerary management.",
+    ],
+    technologies: ["React.js", "Node.js", "Google Gemini API"],
+  },
+  {
+    title: "Skill Gap Analyzer - Career Development Tool",
+    image: project1, // Replace with the appropriate project image variable
+    demoLink: "https://github.com/Yi-99/are-you-gapped", // Add a demo link if available
+    description: [
+      "Developed a skill gap analysis tool to help users identify skill deficiencies and receive personalized learning recommendations.",
+      "Leveraged OpenAI to dynamically generate questions, scored user responses with AI, and visualized user performance in a pentagon chart resembling game-like ability stats, enhancing engagement and user experience.",
+    ],
+    technologies: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
   },
 ];
 
+export const AWARD = [
+  {
+    title: "1st Place Winner in the 2024 BYU ACM YHack",
+    link: "https://www.linkedin.com/posts/jason-jonghyuk_im-thrilled-to-announce-that-our-team-emerged-activity-7175737182949654529-1b6X?utm_source=share&utm_medium=member_desktop",
+    image: award1
+  },
+  {
+    title: "1st Place Winner in the 2024 BYU PMA Hackathon",
+    link: "https://www.linkedin.com/posts/jason-jonghyuk_hackathon-skillgapanalyzer-careergrowth-activity-7264450034392281088-uBBo?utm_source=share&utm_medium=member_desktop",
+    image: award2
+  }
+]
+
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "44 W 2170 N, Provo UT",
+  phoneNo: "(385) 497-4201",
+  email: "whdgur826333@gmail.com",
 };
