@@ -5,6 +5,8 @@ import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import award1 from "../assets/awards/BYU ACM.jpg";
 import award2 from "../assets/awards/BYU PMA.jpg";
+import award3 from "../assets/awards/Justbuilding.jpg"
+import { title } from "framer-motion/client";
 
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
@@ -124,6 +126,11 @@ export const AWARD = [
     link: "https://www.linkedin.com/posts/jason-jonghyuk_hackathon-skillgapanalyzer-careergrowth-activity-7264450034392281088-uBBo?utm_source=share&utm_medium=member_desktop",
     image: award2,
   },
+  {
+    title: "1st Place Winner in the 2024 Justbuilding Hackathon",
+    link: "https://www.linkedin.com/posts/jason-jonghyuk_hackathon-ai-innovation-activity-7272000942898573312-c4gB?utm_source=share&utm_medium=member_desktop",
+    image: award3,
+  }
 ];
 
 export const CONTACT = {
