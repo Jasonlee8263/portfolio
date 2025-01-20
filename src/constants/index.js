@@ -113,6 +113,16 @@ export const PROJECTS = [
     ],
     technologies: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
   },
+  {
+    title: "AI Roofing and Solar Optimization Tool",
+    iamge: project6,
+    demoLink: "https://www.youtube.com/watch?v=oy6Oik1Os6c",
+    descrtipion: [
+      "Developed an AI-powered tool that analyzes satellite images to optimize solar panel and roofing installations, using Python.",
+      "Successfully integrated the tool with Google Maps API, enabling users to visualize the optimal placement of solar panels and roofing.",
+    ],
+    technologies: ["React.js", "Google Maps API"],
+  }
 ];
 
 export const AWARD = [
