@@ -3,10 +3,12 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.jpg";
+import project7 from "../assets/projects/project-7.jpg";
 import award1 from "../assets/awards/BYU ACM.jpg";
 import award2 from "../assets/awards/BYU PMA.jpg";
 import award3 from "../assets/awards/Justbuilding.jpg"
-import { title } from "framer-motion/client";
+import { image, title } from "framer-motion/client";
 
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
@@ -115,13 +117,23 @@ export const PROJECTS = [
   },
   {
     title: "AI Roofing and Solar Optimization Tool",
-    iamge: project6,
+    image: project6,
     demoLink: "https://www.youtube.com/watch?v=oy6Oik1Os6c",
-    descrtipion: [
+    description: [
       "Developed an AI-powered tool that analyzes satellite images to optimize solar panel and roofing installations, using Python.",
       "Successfully integrated the tool with Google Maps API, enabling users to visualize the optimal placement of solar panels and roofing.",
     ],
-    technologies: ["React.js", "Google Maps API"],
+    technologies: ["React.js", "Google Maps API", "Object Detection Model", "Python"],
+  },
+  {
+    title: "AI Tutor",
+    image: project7,
+    demoLink: "https://ai-tutor-frontend-two.vercel.app/",
+    description: [
+      "Enables users to interact with an AI tutor by speaking their queries, which are transcribed, processed, and responded to with text and speech output, providing an interactive learning experience.",
+      "Utilizes OpenAI’s Whisper and GPT-4 models to convert voice inputs into text, generate insightful responses, and deliver audio output, all within a seamless web-based interface."
+    ],
+    technologies: ["Next.js", "OpenAI API", "FastAPI", "Python"]
   }
 ];
 
