@@ -5,12 +5,11 @@ import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
+import project8 from "../assets/projects/project-8.jpg";
 import award1 from "../assets/awards/BYU ACM.jpg";
 import award2 from "../assets/awards/BYU PMA.jpg";
 import award3 from "../assets/awards/Justbuilding.jpg"
 import award4 from "../assets/awards/utah-tech-week-hackathon.jpg";
-import { image, title } from "framer-motion/client";
-
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
 export const ABOUT_TEXT = `I am a passionate software engineering student with a deep enthusiasm for coding and problem-solving. With a proven track record of building innovative web applications, I excel in leveraging technologies like React.js, Node.js, and Python to create scalable solutions that contribute positively to society. Tackling complex challenges and collaborating with teams to deliver impactful results drive my motivation. Beyond my technical pursuits, I find joy in playing soccer, staying active, and continuously seeking opportunities to grow both as a developer and as an individual.`;
@@ -135,7 +134,17 @@ export const PROJECTS = [
       "Utilizes OpenAI’s Whisper and GPT-4 models to convert voice inputs into text, generate insightful responses, and deliver audio output, all within a seamless web-based interface."
     ],
     technologies: ["Next.js", "OpenAI API", "FastAPI", "Python"]
-  }
+  },
+  {
+    title: "AI Avatar Counselor",
+    image: project8,
+    demoLink: "https://www.youtube.com/watch?v=Naj2mfId4JI",
+    description: [
+      "Provides professional counseling responses by retrieving relevant information from uploaded guidance documents using DeepSeek and RAG.",
+      "Enhances user interaction with an AI-powered avatar that answers general queries through OpenAI’s GPT-4, creating an intuitive and engaging experience."
+    ],
+    technologies: ["React.js", "TypeScript", "FastAPI", "Python", "DeepSeek", "OpenAI API", "RAG", "PostgreSQL", "Whisper API"]
+}
 ];
 
 export const AWARD = [
