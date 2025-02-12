@@ -8,6 +8,7 @@ import project7 from "../assets/projects/project-7.jpg";
 import award1 from "../assets/awards/BYU ACM.jpg";
 import award2 from "../assets/awards/BYU PMA.jpg";
 import award3 from "../assets/awards/Justbuilding.jpg"
+import award4 from "../assets/awards/utah-tech-week-hackathon.jpg";
 import { image, title } from "framer-motion/client";
 
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
@@ -152,6 +153,11 @@ export const AWARD = [
     title: "1st Place Winner in the 2024 Justbuilding Hackathon",
     link: "https://www.linkedin.com/posts/jason-jonghyuk_hackathon-ai-innovation-activity-7272000942898573312-c4gB?utm_source=share&utm_medium=member_desktop",
     image: award3,
+  },
+  {
+    title: "1st Place Winner in the 2024 Utah Tech Week Hackathon(1st out of 186)",
+    link: "https://www.linkedin.com/posts/brightlightkim_2025-utah-ai-hackathon-winner-1st-place-activity-7291711965016530945-kD8Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhosZ8BT3_7hDhQJhXdOyIt4iNTgCBelbw",
+    image: award4,
   }
 ];
 
