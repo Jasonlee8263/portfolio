@@ -12,7 +12,7 @@ const Award = () => {
         Award
       </motion.h2>
       <div>
-        {AWARD.map((award, index) => (
+        {AWARD.slice().reverse().map((award, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
