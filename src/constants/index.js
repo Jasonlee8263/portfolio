@@ -6,10 +6,13 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
+import project9 from "../assets/projects/project-9.jpg";
 import award1 from "../assets/awards/BYU ACM.jpg";
 import award2 from "../assets/awards/BYU PMA.jpg";
 import award3 from "../assets/awards/Justbuilding.jpg"
 import award4 from "../assets/awards/utah-tech-week-hackathon.jpg";
+import award5 from "../assets/awards/USU_Hackathon.jpg";
+import { image } from "framer-motion/client";
 export const HERO_CONTENT = `I am an aspiring software engineer passionate about building meaningful applications that make a difference. With a solid foundation in full-stack development and a keen interest in solving real-world problems, I am constantly striving to learn and grow in the field of software engineering.`;
 
 export const ABOUT_TEXT = `I am a passionate software engineering student with a deep enthusiasm for coding and problem-solving. With a proven track record of building innovative web applications, I excel in leveraging technologies like React.js, Node.js, and Python to create scalable solutions that contribute positively to society. Tackling complex challenges and collaborating with teams to deliver impactful results drive my motivation. Beyond my technical pursuits, I find joy in playing soccer, staying active, and continuously seeking opportunities to grow both as a developer and as an individual.`;
@@ -144,7 +147,14 @@ export const PROJECTS = [
       "Enhances user interaction with an AI-powered avatar that answers general queries through OpenAI’s GPT-4, creating an intuitive and engaging experience."
     ],
     technologies: ["React.js", "TypeScript", "FastAPI", "Python", "DeepSeek", "OpenAI API", "RAG", "PostgreSQL", "Whisper API"]
-}
+  },
+  {
+    title: "StoryWonder – AI-Powered Interactive Storytelling Platform",
+    image: project9,
+    demoLink: "",
+    description: ["StoryWonder is an AI-driven interactive storytelling platform that enables users to create and explore dynamic narratives through real-time AI-generated content. By leveraging natural language processing (NLP) and AI-generated visuals, the platform brings stories to life in a personalized and immersive way."],
+    technologies: ["React.js", "JavaScript", "OpenAI API", "Python", "FastAPI", "TailwindCSS", "Supabase"]
+  }
 ];
 
 export const AWARD = [
@@ -164,9 +174,14 @@ export const AWARD = [
     image: award3,
   },
   {
-    title: "1st Place Winner in the 2024 Utah Tech Week Hackathon(1st out of 186)",
+    title: "1st Place Winner in the 2025 Utah Tech Week Hackathon(1st out of 186)",
     link: "https://www.linkedin.com/posts/brightlightkim_2025-utah-ai-hackathon-winner-1st-place-activity-7291711965016530945-kD8Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhosZ8BT3_7hDhQJhXdOyIt4iNTgCBelbw",
     image: award4,
+  },
+  {
+    title: "1st Place Winner in the 2025 USU Hackathon in AI/ML category",
+    link: "https://www.linkedin.com/posts/jason-jonghyuk_ai-machinelearning-hackathon-activity-7302401867467108352-tnKE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhosZ8BT3_7hDhQJhXdOyIt4iNTgCBelbw",
+    image: award5,
   }
 ];
 
