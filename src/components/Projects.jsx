@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  
+  // Get reversed projects (newest first)
+  const reversedProjects = PROJECTS.slice().reverse();
+  // Show either all projects or just the first 5
+  const displayedProjects = showAll ? reversedProjects : reversedProjects.slice(0, 5);
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -14,7 +21,7 @@ const Projects = () => {
         Projects
       </motion.h2>
       <div>
-        {PROJECTS.slice().reverse().map((project, index) => (
+        {displayedProjects.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -81,6 +88,20 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      
+      {/* Show See More/Less button only if there are more than 5 projects */}
+      {reversedProjects.length > 5 && (
+        <div className="flex justify-center mt-8 mb-8">
+          <motion.button
+            onClick={() => setShowAll(!showAll)}
+            className="rounded bg-purple-700 px-6 py-2 text-white hover:bg-purple-800 transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            {showAll ? "See Less" : "See More"}
+          </motion.button>
+        </div>
+      )}
     </div>
   );
 };
